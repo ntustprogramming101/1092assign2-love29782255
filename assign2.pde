@@ -141,7 +141,7 @@ void draw() {
     image(cabbage, cabbageX, cabbageY);
 
     //life
-    if (hogX < soldierX + block && hogX + block > soldierX &&
+    if (hogX < soldierX  && hogX + block > soldierX &&
       hogY < soldierY + block && hogY + block > soldierY) {
       //touch soldier
       lifeAmount = lifeAmount - 1;
